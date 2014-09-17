@@ -13,7 +13,7 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BBX-Zq-kuC">
@@ -60,6 +60,15 @@
                                     <action selector="sendMailButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ToX-Fl-UhL"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oRV-3L-rdN">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="22" y="141" width="183" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <accessibility key="accessibilityConfiguration">
@@ -72,6 +81,7 @@
                                 <exclude reference="zf5-XA-oPG"/>
                                 <exclude reference="Y9U-ds-8z0"/>
                                 <exclude reference="2vw-Zx-JD2"/>
+                                <exclude reference="oRV-3L-rdN"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -81,6 +91,7 @@
                                 <include reference="zf5-XA-oPG"/>
                                 <include reference="Y9U-ds-8z0"/>
                                 <include reference="2vw-Zx-JD2"/>
+                                <include reference="oRV-3L-rdN"/>
                             </mask>
                         </variation>
                     </view>
@@ -90,6 +101,7 @@
                         <outlet property="enterNameTextField" destination="zf5-XA-oPG" id="spb-Wg-TKb"/>
                         <outlet property="mailButton" destination="2vw-Zx-JD2" id="TdA-rb-l8g"/>
                         <outlet property="messageLabel" destination="BBX-Zq-kuC" id="yWN-37-EYN"/>
+                        <outlet property="nameLabel" destination="oRV-3L-rdN" id="YJE-tm-uSd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -105,6 +117,7 @@
                         <viewControllerLayoutGuide type="bottom" id="uKQ-1N-66C"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="irG-Bg-czn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SagradaFamilia.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="N5m-nz-gQf">
